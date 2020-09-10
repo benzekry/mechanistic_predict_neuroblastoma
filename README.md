@@ -10,6 +10,9 @@ code/statistical_analysis.ipynb
 ```
 with results exported in `statistical_analysis/`
   - Simulation of a mechanistic model of metastasis
+```
+code/main_simulate.m
+```
   - Calibration of the model parameters from quantitative clinical data at diagnosis:  primary tumor size, lactate dehydrogenase (LDH) and SIOPEN score from nuclear imaging
 ```
 code/mechanistic.ipynb

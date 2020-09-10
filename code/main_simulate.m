@@ -1,3 +1,4 @@
+addpath(genpath('.'))
 table_res         = readtable('mechanistic/df_fit_indiv.csv');
 idx_patients      = table_res{:, 'id'};
 table_birth_times = table();
