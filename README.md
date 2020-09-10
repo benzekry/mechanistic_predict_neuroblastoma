@@ -26,9 +26,11 @@ and
 ```
 code/cox_r_calibration_plot.ipynb
 ```
-with results exported in `cox_regression` (clinical data alone) and `mechanistic/cox_regression` (clinical data + mathematical parameters)
+with results exported in `cox_regression` (clinical data alone) and `mechanistic/cox_regression` (clinical data + mathematical parameters).
 
 The data used for the analysis is available in ``data/``
+
+The files generating figures and supplementary are available in ``manuscript/``
 
 Previous preprint:
 Descriptive and prognostic value of a computational model of metastasis in high-risk neuroblastoma
