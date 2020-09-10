@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {}Table 1: Patients characteristics}{}{section.1}
+\contentsline {section}{\numberline {}Table 2: Multivariable Cox analysis of overall survival}{}{section.2}
+\contentsline {section}{\numberline {}Figure 1: Schematic of the mathematical model}{}{section.3}
+\contentsline {section}{\numberline {}Figure 2: Overall and progression-free survival}{}{section.4}
+\contentsline {section}{\numberline {}Figure 3: Descriptive power of the mathematical model}{}{section.5}
+\contentsline {section}{\numberline {}Figure 4: Mechanistic simulations of the pre-diagnosis history of high-risk neuroblastoma patients }{}{section.6}
+\contentsline {section}{\numberline {}Figure 5: Prognosis of overall survival}{}{section.7}

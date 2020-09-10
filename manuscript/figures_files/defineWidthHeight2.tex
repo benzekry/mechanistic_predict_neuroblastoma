@@ -1,0 +1,21 @@
+\newcommand{\defineWidthHeight}[2]{
+
+\newcounter{margin}
+\newcounter{Paperwidth}
+\newcounter{Paperheight}
+
+\setcounter{margin}{2}
+\setcounter{Paperwidth}{#1}
+\setcounter{Paperheight}{#2} 
+
+\usepackage[margin=\themargin mm]{geometry}
+\setlength{\paperwidth}{\thePaperwidth mm} 
+\newcounter{Textwidth}
+\setcounter{Textwidth}{\value{Paperwidth}-2*\value{margin}}
+\setlength{\textwidth}{\value{Textwidth} mm}
+\setlength{\paperheight}{\thePaperheight mm} 
+\newcounter{Textheight}
+\setcounter{Textheight}{\value{Paperheight}-2*\value{margin}}
+\setlength{\textheight}{\value{Textheight} mm}
+\setlength{\parindent}{0mm}
+}

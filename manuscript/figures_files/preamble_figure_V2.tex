@@ -1,0 +1,24 @@
+\documentclass[10pt]{article}
+\usepackage[frenchb,english]{babel}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{positioning,calc}
+\input{defineWidthHeight2}
+\fontfamily{phv}\selectfont
+\setlength{\parindent}{0cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Command to automatically crop the pdf file
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\cropped[2]{%
+    \immediate\write18{pdfcrop #1.pdf #1_cropped.pdf}%
+    \includegraphics[width=#2\textwidth]{#1_cropped.pdf}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

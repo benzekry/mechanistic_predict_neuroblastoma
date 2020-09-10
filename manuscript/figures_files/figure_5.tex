@@ -1,0 +1,37 @@
+\input{preamble_figure_V2.tex}
+\defineWidthHeight{190}{140}
+\usepackage[percent]{overpic}
+
+\begin{document}
+\fontfamily{phv}\selectfont
+\def\raiseS[#1]{\raisebox{2\height}{#1}}
+\def\coll{0.45\textwidth}
+\def\up{3.5}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Set path of  code here (i.e. where plots are exported)
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\graphicspath{
+{../../code/}
+}	
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\begin{tabular}{c|c}
+\textbf{ Clinico-biologico-radiological}
+&
+\textbf{ Clinico-biologico-radiological + mathematical}
+\\[2mm]
+\begin{overpic}[width=\coll]{cox_regression/os/hazard_ratios_all_features} 
+%  \put (65, 30) {\textbf{c-index = \input{../../code/cox_regression/os/mean_k_fold_score_signif_multivariate.tex}}}
+  \put (-5, 68) {\textbf{A}}
+\end{overpic}
+& 
+\begin{overpic}[width=0.52\textwidth]{mechanistic/cox_regression_mechanistic_clinical/os/hazard_ratios_all_features} 
+%  \put (70, 26) {\textbf{c-index = \input{../../code/mechanistic/cox_regression_mechanistic_clinical/os/mean_k_fold_score_signif_multivariate.tex}}}
+  \put (0, 58) {\textbf{B}}
+\end{overpic}
+\end{tabular}
+\vskip1cm
+\raisebox{5cm}{\textbf{C}} \hspace{0.2cm}\includegraphics[width=0.6\textwidth]{regression}
+%\\
+%\vskip0.4cm
+\raisebox{4cm}{\textbf{D}} \hspace{0.2cm}\includegraphics[width=0.35\textwidth]{mechanistic/cox_regression_mechanistic_clinical/os/separation_cox_score}
+\end{document}

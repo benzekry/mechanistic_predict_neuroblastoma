@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\input{commandPlotResults.tex}
+\usepackage[frenchb,english]{babel}
+\usepackage[margin=15mm]{geometry}
+\usepackage{graphicx}
+ \usepackage{color} 
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{lscape}
+\usepackage{float}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage[scaled=.90]{helvet}
+\usepackage{booktabs}
+\usepackage{url}
+
+%\setlength{\paperwidth}{210mm} 
+%\setlength{\textwidth}{206mm}
+%\setlength{\paperheight}{297 mm} 
+%\setlength{\textheight}{293mm}
+
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries}
+  {\thesection}{0em}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
+\fontfamily{phv}\selectfont
+\pagenumbering{gobble}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{\Huge{Results}}
+
+\renewcommand{\cfttoctitlefont}{\normalfont\MakeUppercase}
+\renewcommand{\contentsname}{}
+\tableofcontents
+
+\vskip2cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\vskip2cm
+\renewcommand\thesection{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\spaceV{\vskip0.5cm}
+\pagenumbering{gobble}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Univariate analysis}
+\begin{center}
+\input{cox_summary_univariate.tex}
+\end{center}
+
+\newpage
+\section{All features multivariate}
+Mean concordance index (10 fold cross-validation) = \input{mean_k_fold_score_all.tex}
+\vskip2cm
+\begin{center}
+\input{cox_summary_all_features}
+\end{center}
+
+\newpage
+\section{Only significant features}
+Mean concordance index (10 fold cross-validation) = \input{mean_k_fold_score_signif.tex}
+\vskip2cm
+\begin{center}
+\input{cox_summary_features_signif}
+\end{center}
+
+\end{document}

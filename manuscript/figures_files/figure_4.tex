@@ -1,0 +1,47 @@
+\input{preamble_figure_V2.tex}
+\defineWidthHeight{190}{160}
+\usepackage[percent]{overpic}
+
+\begin{document}
+\fontfamily{phv}\selectfont
+\def\raiseS[#1]{\raisebox{2\height}{#1}}
+\def\coll{0.3\textwidth}
+\def\up{3.5}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Set path of  code here (i.e. where plots are exported)
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\graphicspath{
+{../../code/}
+}	
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\raisebox{4.8cm}{\textbf{A}}
+\begin{tabular}{ccc}
+\textbf{Patient 1}
+&
+\textbf{Patient 9}
+&
+\textbf{Patient 16}
+\\[1ex]
+\includegraphics[width=\coll]{simulations/patient_1/growth_mets.pdf}
+&
+\includegraphics[width=\coll]{simulations/patient_9/growth_mets.pdf}
+&
+\includegraphics[width=\coll]{simulations/patient_16/growth_mets.pdf}
+\\[2ex]
+\textbf{Patient 24}
+&
+\textbf{Patient 25}
+&
+\textbf{Patient 30}
+\\[1ex]
+\includegraphics[width=\coll]{simulations/patient_24/growth_mets.pdf}
+&
+\includegraphics[width=\coll]{simulations/patient_25/growth_mets.pdf}
+&
+\includegraphics[width=\coll]{simulations/patient_30/growth_mets.pdf}
+\end{tabular}
+\centering{
+\raisebox{4cm}{\textbf{B}}
+\includegraphics[width=0.48\textwidth]{simulations/time_frame.pdf}
+}
+\end{document}

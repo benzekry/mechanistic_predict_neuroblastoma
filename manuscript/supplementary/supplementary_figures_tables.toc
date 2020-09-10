@@ -1,0 +1,10 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {}Table S1: Neuroblastoma classification according to the International Neuroblastoma Risk Group staging system}{}{section.1}
+\contentsline {section}{\numberline {}Table S2: Cox analysis of progression-free survival}{}{section.2}
+\contentsline {section}{\numberline {}Figure S1: HRNBL1 protocol}{}{section.3}
+\contentsline {section}{\numberline {}Figure S2: SIOPEN scoring}{}{section.4}
+\contentsline {section}{\numberline {}Figure S3: Primary tumor and metastases location}{}{section.5}
+\contentsline {section}{\numberline {}Figure S4: Simulations of all patients}{}{section.6}
+\contentsline {section}{\numberline {}Figure S5: Overall survival analysis in dichotomized groups}{}{section.7}
+\contentsline {section}{\numberline {}Figure S6: Progression-free survival analysis in dichotomized groups}{}{section.8}
+\contentsline {section}{\numberline {}Figure S7: Calibration plots}{}{section.9}

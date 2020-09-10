@@ -1,0 +1,31 @@
+\input{preamble_figure_V2.tex}
+\defineWidthHeight{190}{160}
+\usepackage[percent]{overpic}
+
+\begin{document}
+\fontfamily{phv}\selectfont
+\def\raiseS[#1]{\raisebox{2\height}{#1}}
+\def\coll{0.48\textwidth}
+\def\up{3.5}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Set path of  code here (i.e. where plots are exported)
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\graphicspath{
+{../../code/}
+}	
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%\hspace{1mm}
+\begin{overpic}[width=\coll]{mechanistic/fit_SIOPEN.pdf}
+  \put (-3,70) {\textbf{A}}
+\end{overpic}
+\hspace{1mm}
+\begin{overpic}[width=\coll]{mechanistic/fit_LDH.pdf}
+  \put (-3,70) {\textbf{B}}
+\end{overpic}
+\vskip0.5cm
+\centering{
+\begin{overpic}[width=\coll]{mechanistic/correlation_matrix.pdf}
+  \put (-3,80) {\textbf{C}}
+\end{overpic}
+}
+\end{document}

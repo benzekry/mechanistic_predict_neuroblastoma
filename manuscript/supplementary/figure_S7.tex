@@ -1,0 +1,33 @@
+\input{preamble_figure_V2.tex}
+\defineWidthHeight{190}{100}
+\usepackage[percent]{overpic}
+
+\begin{document}
+\fontfamily{phv}\selectfont
+\def\coll{0.45\textwidth}
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Set path of  code here (i.e. where plots are exported)
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\graphicspath{
+{../../code/}
+}	
+
+\begin{tabular}{c|c}
+\textbf{\large Only clinical}
+&
+\textbf{\large Clinical + $\mu$}
+\\[2mm]
+\hspace{1mm}
+\begin{overpic}[width=\coll]{cox_regression/os/calibration_plot_harrell} % put ,grid,tics=10 to see grid
+% \put (20,20) {p = 0.0353}
+ \put (-5, 85) {\textbf{A}}
+\end{overpic}
+&
+\hspace{4mm}
+\begin{overpic}[width=\coll]{mechanistic/cox_regression_mechanistic_clinical/os/calibration_plot_harrell} % put ,grid,tics=10 to see grid
+% \put (20,20) {p = 0.0353}
+ \put (-7, 85) {\textbf{B}}
+\end{overpic}
+\end{tabular}
+
+\end{document}
