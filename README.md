@@ -3,7 +3,7 @@
 This code generates the results and figures reported in the paper:  
 Benzekry, S., Sentis, C., Coze, C., Tessonnier, L., & André, N. (2020). Descriptive and prognostic value of a computational model of metastasis in high-risk neuroblastoma. JCO: Clinical Cancer Informatics, in revision.
 
-Specifically, the code is composed of python and matlab scripts, jupyter notebooks (in python and R) and performs:
+Specifically, the code is composed of python and matlab scripts and jupyter notebooks (in python and R) and performs:
   - Statistical analysis of prognosis factors of overall and progression-free survival (Kaplan-Meier, log-rank, Cox regression)
 ```
 code/statistical_analysis.ipynb
