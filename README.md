@@ -1,7 +1,8 @@
 # Mechanistic modeling of metastasis for prediction of overall survival in neuroblastoma
 
 This code generates the results and figures reported in the paper:  
-Benzekry, S., Sentis, C., Coze, C., Tessonnier, L., & André, N. (2020). Descriptive and prognostic value of a computational model of metastasis in high-risk neuroblastoma. JCO: Clinical Cancer Informatics, in revision.
+Benzekry, S., Sentis, C., Coze, C., Tessonnier, L., & André, N. (2020). Development and Validation of a Prediction Model of Overall Survival in High-Risk Neuroblastoma Using Mechanistic Modeling of Metastasis. JCO: Clinical Cancer Informatics, Vol 5, pp. 81-90.
+https://ascopubs.org/doi/full/10.1200/CCI.20.00092
 
 Specifically, the code is composed of python and matlab scripts and jupyter notebooks (in python and R) and performs:
   - Statistical analysis of prognosis factors of overall and progression-free survival (Kaplan-Meier, log-rank, Cox regression)
